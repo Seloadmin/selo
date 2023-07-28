@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelfLove</title>
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://kit.fontawesome.com/dd676fda75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Selo logo2.1.png" alt="" width="160px" height="160px">
+        </div>
+        <ul>
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </div>
+    <div class="dropdownmenu">
+        <ul>
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdownmenu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <div class="content">
+        <video autoplay loop muted plays-inline class="vid">
+            <source src="pexels-ameruverse-digital-marketing-media-1494295-1920x1080-24fps.mp4" type="video/mp4">
+        </video>
+        <div class="welcome">
+            <h1 class="wee">Welcome to</h1>
+            <span class="sel"> 
+                <h1>S<span class="elo">elo</span></h1>
+            </span>
+            <h2> giving you comfort in your skin</h2>
+            <h3>Check out our products</h3>
+            <a href="#products" class="arr"><i class="fa-sharp fa-solid fa-arrow-down"></i></a>
+        </div>
+    </div>
+    <section class="products" id="products">
+        <h2 class="tgs">Hygiene Series</h2>
+        <div class="mi">
+            <div class="image">
+                <a href="#" class="img">
+                    <img src="standard kit.jpg" alt="" class="sk">
+                </a>
+            </div>
+            <h2 class="mk">The <span class="men">Menstrual</span> Kit <br>(Standard Kit)</h2>
+        </div><br>
+        <div class="button">
+            <a href="Product.html"><button class="btn">More..</button></a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="mi">
+            <div class="image">
+                <a href="#" class="img">
+                    <img src="closed pouch.jpg" alt="">
+                </a>
+            </div>
+            <h2 class="mk">The <span class="men">Menstrual</span> Kit <br>(Standard Renewal Kit)</h2>
+        </div><br>
+        <div class="button">
+            <a href="Product.html#rf"><button class="btn">More..</button></a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="mi">
+            <div class="image">
+                <a href="#" class="img">
+                    <img src="Notepad front.jpg" alt="">
+                </a>
+            </div>
+            <h2 class="mk">The <span class="men">Monthlies</span> Diary <br>(2023 Edition)</h2>
+        </div><br>
+        <div class="button">
+            <a href="Product.html"><button class="btn">More..</button></a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="ftc">
+                <li><a href="Feedback.html">Send us feedback</a></li>
+                <li><a href="#">Get help</a></li>
+                <li><a href="About.html">About Selo</a>
+                    <ul class="sub">
+                        <li><a href="About.html#missi">Mission</a></li>
+                        <li><a href="About.html#visi">Vision</a></li>
+                        <li><a href="About.html#valu">Values</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="footer-content">
+                <ul class="icns" id="con">
+                    <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i> info.selo.ng@gmail.com</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> i_am_selo</a>
+                    <a href="http://www.instagram.com/i.am.selo"><i class="fa-brands fa-instagram"></i> i.am.selo</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> +234 9128 09425</a>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> Agungi, Lekki, Nigeria.</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cop">
+            <h6>
+                <a href="#"><i class="fa-regular fa-copyright"></i></a>
+                Fawziyyah Oke 2023
+            </h6>
+        </div>
+    </footer>
+</body>
+
+</html>

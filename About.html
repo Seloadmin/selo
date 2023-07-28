@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://kit.fontawesome.com/dd676fda75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Selo logo2.1.png" alt="" width="160px" height="160px">
+        </div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html"class="active">About</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </div>
+    <div class="dropdownmenu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html"class="active">About</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdownmenu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <div class="about">
+      <div class="cs">
+        <u><h1>The Genesis</h1></u>
+        <p> Selo, coined from self-love, is a company created to help people find love for themselves. 
+            It all began when I realised that as much as I encouraged others to love themselves, I didn't really love myself. 
+            My feelings of discomfort stemmed from not having a sense of ownership in my environment, lack of confidence in my appearance and major discomfort in public spaces.
+            In light of this, I decided to embark on a journey to find self-love and to help others do the same.
+            </p>
+      </div>
+      <div class="miss" id="missi">
+        <u><h1>Mission</h1></u>
+        <p>Selo's mission is to reach people in every corner of the world and help them achieve self-love.
+        </p>
+      </div>
+      <div class="vis" id="visi">
+        <u><h1>Vision</h1></u>
+        <p>In Selo's vision, people are able to cultivate self-love by creating a sense of pride and satisfaction in taking care of oneself through affordable, 
+            high-quality products. </p>
+      </div>
+      <div class="val" id="valu">
+        <u><h1>Values</h1></u>
+        <p>
+            Accountability<br>
+            Integrity<br>
+            Innovation<br>
+            Humility<br>
+            Compassion
+            </p>
+      </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="ftc">
+                <li><a href="Feedback.html">Send us feedback</a></li>
+                <li><a href="#">Get help</a></li>
+                <li><a href="About.html">About Selo</a>
+                    <ul class="sub">
+                        <li><a href="#missi">Mission</a></li>
+                        <li><a href="#visi">Vision</a></li>
+                        <li><a href="#valu">Values</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="footer-content">
+                <ul class="icns" id="con">
+                    <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i> info.selo.ng@gmail.com</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> i_am_selo</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> i.am.selo</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> +234 9128 09425</a>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> Agungi, Lekki, Nigeria.</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cop">
+            <h6>
+                <a href="#"><i class="fa-regular fa-copyright"></i></a>
+                Fawziyyah Oke 2023
+            </h6>
+        </div>
+    </footer>
+</body>
+</html>

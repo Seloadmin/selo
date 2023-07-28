@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://kit.fontawesome.com/dd676fda75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Selo logo2.1.png" alt="" width="160px" height="160px">
+        </div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="Feedback.html"class="active">Feedback</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </div>
+    <div class="dropdownmenu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="Feedback.html"class="active">Feedback</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdownmenu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <div class="feedback-container">
+     <!-- BOX 1 ----------------->
+        <div class="feedback-box">
+            <div class="box-top">
+                <div class="fprofile">
+                    <div class="profile-img">
+                        <img src="person-icon.png" alt="">
+                    </div>
+                    <div class="username">
+                        <strong>Person 1</strong>
+                    </div>
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+                 temporibus quibusdam odit quae numquam iure, repellat magnam deleniti 
+                 neque ex molestias labore voluptas, blanditiis enim cum dolorem eveniet 
+                 exercitationem soluta.
+                </p>
+            </div>
+        </div>
+     <!-- BOX 2 ----------------->
+        <div class="feedback-box">
+            <div class="box-top">
+                <div class="fprofile">
+                    <div class="profile-img">
+                        <img src="person-icon.png" alt="">
+                    </div>
+                    <div class="username">
+                        <strong>Person 2</strong>
+                    </div>
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+                 temporibus quibusdam odit quae numquam iure, repellat magnam deleniti 
+                 neque ex molestias labore voluptas, blanditiis enim cum dolorem eveniet 
+                 exercitationem soluta.
+                </p>
+            </div>
+        </div>
+     <!-- BOX 3 ------------------>
+        <div class="feedback-box">
+            <div class="box-top">
+                <div class="fprofile">
+                    <div class="profile-img">
+                        <img src="person-icon.png" alt="">
+                    </div>
+                    <div class="username">
+                        <strong>Person 3</strong>
+                    </div>
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+                 temporibus quibusdam odit quae numquam iure, repellat magnam deleniti 
+                 neque ex molestias labore voluptas, blanditiis enim cum dolorem eveniet 
+                 exercitationem soluta.
+                </p>
+            </div>
+        </div>
+     <!-- BOX 4 ---------------------->
+        <div class="feedback-box">
+            <div class="box-top">
+                <div class="fprofile">
+                    <div class="profile-img">
+                        <img src="person-icon.png" alt="">
+                    </div>
+                    <div class="username">
+                        <strong>Person 4</strong>
+                    </div>
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+                 temporibus quibusdam odit quae numquam iure, repellat magnam deleniti 
+                 neque ex molestias labore voluptas, blanditiis enim cum dolorem eveniet 
+                 exercitationem soluta.
+                </p>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="fb">
+        <a href="https://forms.gle/Zc4srqR7Q6dEyACx8"><button>Give Your Feedback</button></a>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="ftc">
+                <li><a href="Feedback.html">Send us feedback</a></li>
+                <li><a href="#">Get help</a></li>
+                <li><a href="About.html">About Selo</a>
+                    <ul class="sub">
+                        <li><a href="About.html#missi">Mission</a></li>
+                        <li><a href="About.html#visi">Vision</a></li>
+                        <li><a href="About.html#valu">Values</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="footer-content">
+                <ul class="icns" id="con">
+                    <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i> info.selo.ng@gmail.com</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> i_am_selo</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> i.am.selo</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> +234 9128 09425</a>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> Agungi, Lekki, Nigeria.</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cop">
+            <h6>
+                <a href="#"><i class="fa-regular fa-copyright"></i></a>
+                Fawziyyah Oke 2023
+            </h6>
+        </div>
+    </footer>
+</body>
+</html>

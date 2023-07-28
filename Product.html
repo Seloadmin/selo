@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/dd676fda75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Selo logo2.1.png" alt="" width="160px" height="160px">
+        </div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html" class="active">Products</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </div>
+    <div class="dropdownmenu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html"class="active">Products</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="#con">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdownmenu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+     <section class="container">
+        <div class="slider-wrapper"> 
+           <div class="slider">
+             <img src="standard kit.jpg" id="slide-1">
+             <img src="open poch 2.jpg" id="slide-2">
+           </div>
+           <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+           </div>
+        </div>
+        <div class="pc">
+            <h2>The <span> Menstrual</span> Kit (Standard Kit)</h2>
+            <p>This kit is equipped with everything you could possibly need during this sensitive period of time. <br><br>
+            Contents include: Sanitary towels(pads), hand sanitizer, body mist, tissue, wipes, soap, disposable nylons, disposable pant,
+              portable bidet, the monthlies diary, and an exclusive pen. <br><br>
+              Functions of some of the items include: <br>
+              Portable bidet: It provides a stream of water for personal cleansing instead of bathroom tissue. <br>
+              The monthlies diary: Helps you to record your period for medical use or personal monitoring. <br>
+              Exclusive pen: This pen can serve as a phone stand and also act as a stylus pen for your phone.
+                 </p>
+                 <div class="butt">
+                    <a href="https://forms.gle/nsJpQF6jEKziEGFc9"><button class="bn">Order Now</button></a>
+                      </div>
+        </div>
+     </section>
+
+     <section class="container" id="rf">
+        <div class="slider-wrapper"> 
+           <div class="slider">
+             <img src="closed pouch.jpg" id="slide-1">
+             <img src="open poch 2.jpg" id="slide-2">
+           </div>
+           <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+           </div>
+        </div>
+        <div class="pc">
+            <h2>The <span> Menstrual</span> Kit (Standard Renewal Kit)</h2>
+            <p>This is a follow up kit that provides you with the items that need to be renewed every month. <br><br>
+             Contents include: Sanitary towels(pads), hand sanitizer, body mist, tissue, wipes, soap, disposable nylons, and
+             disposable pant.
+               <br><br>
+            Note: This kit excludes the bidet, exclusive pen and the monthlies diary. These items can only be gained when you buy the standard
+             kit
+            </p>
+                 <div class="butt">
+            <a href="https://forms.gle/nsJpQF6jEKziEGFc9"><button class="bn">Order Now</button></a>
+              </div>
+        </div>
+     </section>
+
+     <section class="container" id="rf">
+        <div class="slider-wrapper"> 
+           <div class="slider">
+             <img src="Notepad front.jpg" id="slide-1">
+             <img src="Notepad back.jpg" id="slide-2">
+             <img src="Notepad open.jpg" id="slide-3 ">
+           </div>
+           <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+           </div>
+        </div>
+        <div class="pc">
+            <h2>The <span>Monthlies</span> Diary</h2>
+            <p>This is a journal in which a woman writes down information about her menstrual cycle, 
+                such as the date of her last period, the length of her cycle, and any symptoms she is experiencing.
+            </p>
+                 <div class="butt">
+            <a href="https://forms.gle/nsJpQF6jEKziEGFc9"><button class="bn">Order Now</button></a>
+              </div>
+        </div>
+     </section>
+   
+    <footer>
+        <div class="footer">
+            <div class="ftc">
+                <li><a href="Feedback.html">Send us feedback</a></li>
+                <li><a href="#">Get help</a></li>
+                <li><a href="About.html">About Selo</a>
+                    <ul class="sub">
+                        <li><a href="About.html#missi">Mission</a></li>
+                        <li><a href="About.html#visi">Vision</a></li>
+                        <li><a href="About.html#valu">Values</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="footer-content">
+                <ul class="icns" id="con">
+                    <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i> info.selo.ng@gmail.com</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> i_am_selo</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> i.am.selo</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> +234 9128 09425</a>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> Agungi, Lekki, Nigeria.</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cop">
+            <h6>
+                <a href="#"><i class="fa-regular fa-copyright"></i></a>
+                Fawziyyah Oke 2023
+            </h6>
+        </div>
+    </footer>
+</body>
+
+</html>
